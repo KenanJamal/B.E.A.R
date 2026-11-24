@@ -12,7 +12,7 @@ Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
 int lastletter = -1;
 const int PULSE_UP = 350;
 const int PULSE_DOWN = 150;
-const int LETTER_DELAY = 3000;
+const int LETTER_DELAY = 5000;
 
 // letters loaded from the json file (english.json / spanish.json / japanese.json)
 // sent over Serial by send_json.py
@@ -149,7 +149,7 @@ void learnAllLetters()
     delay(LETTER_DELAY);
     ResetALL();
     delay(500);
-  }
+  } 
 }
 
 void loop() {
